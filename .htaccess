@@ -5,6 +5,6 @@ RewriteEngine on
 #</Files>
 
 RewriteBase /
-RewriteRule ^(static|thumb|preview)/.*$ - [L]
+RewriteRule ^(static|thumb|preview|big)/.*$ - [L]
 RewriteRule ^(index\.py/.*)$ - [L]
 RewriteRule ^(.*)$ /index.py/$1 [L]

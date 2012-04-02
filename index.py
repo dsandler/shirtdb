@@ -14,6 +14,8 @@ COLLEGES = dict(
     brown='Brown',
     jones='Jones',
     martel='Martel',
+    mcmurtry='McMurtry',
+    duncan='Duncan',
     gsa='GSA',
 )
 

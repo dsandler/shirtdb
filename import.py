@@ -18,9 +18,10 @@ for fn in os.listdir("thumb"):
     print fn, count
     if count == 0:
         try:
-            (year, college, rest) = re.match(r'^([^-]+)-([^-]+)-(.+).jpg$', fn).groups()
+            (year, college, rest) = re.match(r'^([^-]+)[.-]([^-]+)-(.+).jpg$', fn).groups()
             if college not in ('sid', 'wrc', 'gsa', 'baker', 'brown',
-            'wiess', 'jones', 'martel', 'mcmurtry', 'hanszen'):
+            'wiess', 'jones', 'martel', 'mcmurtry', 'hanszen',
+            'lovett', 'duncan'):
                 print "error: unknown college in file %s" % fn
                 sys.exit(1)
         except Exception, e:
