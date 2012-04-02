@@ -1,0 +1,10 @@
+<Files test.fcgi>
+SetHandler fastcgi-script
+</Files>
+<Files test2.fcgi>
+SetHandler fastcgi-script
+</Files>
+<Files test2.py>
+SetHandler fastcgi-script
+</Files>
+

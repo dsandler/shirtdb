@@ -1,0 +1,10 @@
+RewriteEngine on
+
+#<Files index.py>
+#SetHandler fastcgi-script
+#</Files>
+
+RewriteBase /
+RewriteRule ^(static|thumb|preview)/.*$ - [L]
+RewriteRule ^(index\.py/.*)$ - [L]
+RewriteRule ^(.*)$ /index.py/$1 [L]
